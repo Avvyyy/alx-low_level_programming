@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main: this is the main function in the code
+ * main -  this is the main function in the code
  * void: tells us that the main function ccepts no argumnets
  * Return: 0 if code is succesful
 */
