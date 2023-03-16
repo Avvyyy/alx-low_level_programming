@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**uses the puts()function to print a statement&*/
-int main(void)
+main(void)
 {
-	puts(""Programming is like building a multilingual puzzle");
+	puts(" /"Programming is like building a multilingual puzzle");
 	return (0);
 }
