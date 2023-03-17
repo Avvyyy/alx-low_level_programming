@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main = Program to print all the lowercae alphabets
+ * main - Program to print all the lowercae alphabets
  *
  * Return: 0 if code is successful
  */
@@ -19,4 +19,4 @@ int main(void)
 		putchar('\n');
 	return (0);
 
-}	
+}
