@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - function housing other functions 
+ * main - function housing other functions
  * void:Shows that function takes no arguments
  *
- * RETURN:0 if program is successful
+ * RETURN: 0 if program is successful
 */
 
 int main(void)
