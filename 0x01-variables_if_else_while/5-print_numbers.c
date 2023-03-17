@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - program to print 0 to 9
+ * main - if else statements
  *
- * RETURN: 0 if successful
+ * Return: Always 0 (Success)
  */
 
 int main(void)

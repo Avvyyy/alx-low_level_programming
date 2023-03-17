@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - program to print +ve single digits
+ * main - if else statements
  *
- * RETURN: 0 if successful
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -16,5 +16,6 @@ int main(void)
 		putchar(a);
 		a++;
 	}
+	putchar ('\n');
 	return (0);
 }
