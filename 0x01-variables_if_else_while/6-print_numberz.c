@@ -2,17 +2,19 @@
 #include <stdlib.h>
 
 /**
- * main - program to print 0 to 9
+ * main - program to print +ve single digits
  *
  * RETURN: 0 if successful
  */
 
 int main(void)
 {
-	int i = 0;
+	int a = 48;
 
-	for (; i < 10; i++)
-		printf("%d", i);
-	putchar('\n');
+	while (a < 58)
+	{
+		putchar(a);
+		a++;
+	}
 	return (0);
 }
