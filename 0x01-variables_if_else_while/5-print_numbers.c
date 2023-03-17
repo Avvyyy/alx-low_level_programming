@@ -2,7 +2,7 @@
 
 /**
  * main - function housing other functions
- * void:Shows that function takes no arguments
+ * @void: `Shows that function takes no arguments
  *
  * RETURN: 0 if program is successful
 */
