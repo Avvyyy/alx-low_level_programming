@@ -1,7 +1,7 @@
 /*Program to print _putchar*/
 
 #include <stdio.h>
-#include <stdilb.h>
+#include <stdlib.h>
 
 /**
  * _input - Function to print a constant to standard output
