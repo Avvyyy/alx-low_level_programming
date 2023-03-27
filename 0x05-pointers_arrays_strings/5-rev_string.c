@@ -1,22 +1,26 @@
 #include "main.h"
-
 /**
- * rev_string - Function to print the a string reversed
- * @s: Pointer housing string to be reversed
+ * rev_string - reverses a string
+ * _putchar - print each character
+ * @s: char to check
  *
- * Return: none
+ * Description: This will reverse a string
+ * Return: 0 is success
  */
-
 void rev_string(char *s)
 {
-	int i = 0;
+	int a = 0, b, c;
+	char d;
 
-	while (s[i] != '\0')
-		i++;
-
-	while (i > 0)
+	while (s[a] != '\0')
 	{
-		i--;
-		_putchar(s[i]);
+		a++;
+	}
+	c = a - 1;
+	for (b = 0; c >= 0 && b < c; c--, b++)
+	{
+		d = s[b];
+		s[b] = s[c];
+		s[c] = d;
 	}
 }
