@@ -4,7 +4,7 @@
  * puts_half - Function to print the second half of a string
  * @str: Pointer to the string to be printed
  *
- * Return: None
+ * Return: Nonei
  */
 
 void puts_half(char *str)
@@ -29,8 +29,8 @@ void puts_half(char *str)
 
 		while (str[j] != '\0')
 		{
-			j++;
 			_putchar(str[j]);
+			j++;
 		}
 	}
 	_putchar('\n');
