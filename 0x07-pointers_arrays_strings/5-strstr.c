@@ -6,7 +6,7 @@
  * @needle: The pointer to the subsection to be checked in haystack
  *
  * Return: pointer to beginnning of needle
- *  in haystakc or NULL(if needle not found)
+ * in haystakc or NULL(if needle not found)
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -20,9 +20,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		if (*needle == '\0')
-		{
 			return (haystack);
-		}
 		haystack++;
 	}
 	return (NULL);
