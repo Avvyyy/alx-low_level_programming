@@ -17,3 +17,4 @@ ar rc liball.a *.o;
 #Removing the .o for good practice
 
 rm *.o;
+
