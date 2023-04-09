@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #listing all the c files in the directory
-$c_file = $(ls *.c);
+c_file = $(ls *.c);
 
 #Converting the .c to .o
 for file in $c_file
