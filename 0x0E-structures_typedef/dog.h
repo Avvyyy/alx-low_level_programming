@@ -1,6 +1,7 @@
 #ifndef DOG
 #define DOG
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dog - Structure for a new dog
