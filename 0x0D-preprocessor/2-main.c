@@ -3,10 +3,11 @@
 /**
  * main - FUnction to print the name of the file it was compiled from
  *
- * Return: None
+ * Return: 0 if successful
  */
 
-void main(void)
+int main(void)
 {
 	printf("%s\n", _FILE_);
+	return (0);
 }
