@@ -1,6 +1,6 @@
-#ifndef 3-function_like_macro.h
-#define 3-function_like_macro.h
+#ifndef FUNCTION_LIKE_MACRO
+#define FUNCTION_LIKE_MACRO
 
-#define ABS(x) ((x) < 0 ?(x * (-1)) : (x))
+#define ABS(x) ((x) < 0 ? ((x) * -1) : (x))
 
 #endif
