@@ -1,12 +1,12 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG
+#define DOG
 #include <stdio.h>
 
 /**
  * struct dog - Structure for a new dog
  * @name: Pointer to name of dog
  * @age: Name of dog
- * owner: Pointer to name of owner
+ * @owner: Pointer to name of owner
  */
 
 struct dog
@@ -16,4 +16,5 @@ struct dog
 	char *owner;
 }
 
+typedef struct dog our_dog;
 #endif
