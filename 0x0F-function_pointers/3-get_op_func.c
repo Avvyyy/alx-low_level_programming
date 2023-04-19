@@ -1,66 +1,24 @@
 #include "3-calc.h"
-
-/**
- * op_add - Function to add 2 numbers
- * @a: First operand
- * @b: Second operand
- *
- * Return: a + b
- */
-
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-	return (a + b);
-}
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+		};
 
-/**
- * op_sub - Function to perform subtraction
- * @a: First operand
- * @b: Second operand
- *
- * Return: a - b
- */
+		int i;
 
-int op_sub(int a, int b)
-{       
-        return (a - b);
-}
+	while (i < 5)
+	{
+		if (strcmp(s, ops[i].op) == 0)
+			return (ops[i].f);
 
-/**
- * op_mul - Function to multiply 2 numbers
- * @a: First operand
- * @b: Second operand
- *
- * Return: a * b
- */
+		i++;
+	}
 
-int op_mul(int a, int b)
-{
-        return (a * b);
-}
-
-/**
- * op_div - Function to perform division
- * @a: First operand
- * @b: Second operand
- *
- * Return: a / b
- */
-
-int op_div(int a, int b)
-{
-        return (a / b);
-}
-
-/**
- * op_mod - Function to perform modular operation
- * @a: First operand
- * @b: Second operand
- *
- * Return: a % b
- */
-
-int op_mod(int a, int b)
-{
-        return (a % b);
+	return (0);
 }
