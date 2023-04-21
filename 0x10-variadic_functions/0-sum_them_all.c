@@ -9,15 +9,17 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	var_list mySum;
-	int i, sum;
+	va_list mySum;
+	unsigned int i, sum;
 
-	var_start(mySum, n);
+	va_start(mySum, n);
 
 	sum = 0;
 
 	for (i = 0; i < n; i++)
-		sum += var_arg(mySum, int);
+		sum += va_arg(mySum, int);
 
 	return (sum);
+
+	va_end(mySum);
 }
