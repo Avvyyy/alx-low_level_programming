@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list: Functionto print all elements in a list list_t
+ * print_list - Function to print all elements in a list list_t
  * @h: Pointer to list to be printed
  *
  * Return: Numbe of nodes in the list
@@ -9,7 +9,7 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t j;
+	size_t j = 0;
 
 	while (h != NULL)
 	{
