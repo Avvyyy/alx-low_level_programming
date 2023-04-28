@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (!new_node)
 	{
-		return (1); /** malloc failed, exit program**/
+		return (NULL); /** malloc failed, exit program**/
 	}
 
 	new_node->str = strdup(str);
@@ -22,7 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (!new_node->str)
 	{
 		free(new_node); /** strdup failed, free memory and exit program**/
-		return (1);
+		return (NULL);;
 	}
 
 	new_node->next = *head;
