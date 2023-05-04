@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 		dec += b[strlen] - '0';
 		strlen++;
 	}
-	
+
 	if (b[strlen] != '\0')
 		return (0);
 
