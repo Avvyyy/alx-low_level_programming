@@ -6,7 +6,7 @@
  * @index: Index of element to retrieve
  *
  * Return: Nth node of linked list else NULL
- * 
+ *
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
