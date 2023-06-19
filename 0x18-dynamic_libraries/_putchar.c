@@ -9,6 +9,6 @@
 
 int _putchar(char c)
 {
-	_putchar(c);
+	_putchar (c);
 	return(0);
 }
