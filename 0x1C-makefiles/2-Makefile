@@ -1,0 +1,23 @@
+# Program to create a makefile
+# Variables: CC, SRC, OBJ, NAME
+# Rules: all
+# Executable name: school
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+%.o: %.c
+	$(CC) -c $< -o $@
+
+clean:
+	rm -f $(OBJ)
+
+
+.PHONY: all clean 
