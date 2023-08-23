@@ -1,6 +1,17 @@
 #!/usr/bin/python3
+"""Function to print perimeter of an island"""
 
 def islandPerimeter(grid):
+    """
+        Function to print the perimeter of an island
+        
+        Argument:
+        grid: matrix representation of the island
+
+        Return:
+        Perimeter
+    """
+
     perimeter = 0
     rows = len(grid)
     cols = len(grid[0])
